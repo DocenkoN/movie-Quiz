@@ -1,11 +1,6 @@
-//
-//  AlertPresenter.swift
-//  MovieQuiz
-//
-//  Created by Николай Доценко on 01.07.2025.
-//
-
 import Foundation
+import UIKit
+
 protocol AlertPresenterProtocol: AnyObject {
-    
+    func present(alert: UIAlertController, animated: Bool)
 }
