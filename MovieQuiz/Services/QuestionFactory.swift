@@ -5,7 +5,7 @@ final class QuestionFactory: QuestionFactoryProtocol {
     private var movies: [MostPopularMovie] = []
     private var currentIndex = 0
     
-    var delegate: QuestionFactoryDelegate?
+    weak var delegate: QuestionFactoryDelegate?
     
     init(moviesLoader: MoviesLoading, delegate: QuestionFactoryDelegate?) {
         self.moviesLoader = moviesLoader
@@ -47,7 +47,7 @@ final class QuestionFactory: QuestionFactoryProtocol {
             } catch {
                 print("Failed to load image")
                 DispatchQueue.main.async {
-                    self.delegate?.didReceiveNextQuestion(question: nil)
+                    self.delegate?.didFailToLoadQuestion(with: error)
                 }
                 return
             }

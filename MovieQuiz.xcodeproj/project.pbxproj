@@ -100,7 +100,6 @@
 				AD3DDF082E022C1600623434 /* YS Display-Bold.ttf */,
 				AD3DDF0A2E022C2100623434 /* YS Display-Medium.ttf */,
 				AD3DDF122E022FBB00623434 /* Info.plist */,
-				AD3DDF112E022ED000623434 /* Services */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -126,6 +125,8 @@
 			children = (
 				AD1ABAB12831907B00B3E448 /* AppDelegate.swift */,
 				AD1ABAB32831907B00B3E448 /* SceneDelegate.swift */,
+				AD3DDF112E022ED000623434 /* Services */,
+				AD3DDF102E022EBE00623434 /* Models */,
 				ADF0CF75283FDAA10075F54D /* Helpers */,
 				8F4738322848DE2A005DF65E /* Presentation */,
 				8F4738332848DE46005DF65E /* Resources */,
@@ -168,7 +169,6 @@
 				AD5EE5DD284D7887003966EF /* UIColor+Extensions.swift */,
 				AD7AFA542836189F00399704 /* Array+Extensions.swift */,
 				AD77F5732857F8810062FB14 /* Date+Extensions.swift */,
-				AD3DDF102E022EBE00623434 /* Models */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
