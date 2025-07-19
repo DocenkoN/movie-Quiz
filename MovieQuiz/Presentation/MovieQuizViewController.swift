@@ -83,6 +83,7 @@ final class MovieQuizViewController: UIViewController, QuestionFactoryDelegate {
     }
     
     private func showNextQuestionOrResults() {
+        isButtonEnabled = false
         imageView.layer.borderWidth = 0
         
         if currentQuestionIndex == questionsAmount - 1 {
@@ -126,6 +127,8 @@ final class MovieQuizViewController: UIViewController, QuestionFactoryDelegate {
                                message: message,
                                buttonText: "Попробовать еще раз") { [weak self] in
             guard let self = self else { return }
+            
+            self.isButtonEnabled = false
             self.isLoading = true
             self.questionFactory?.loadData()
             
