@@ -5,7 +5,7 @@ final class QuestionFactory: QuestionFactoryProtocol {
     private var movies: [MostPopularMovie] = []
     private var currentIndex = 0
     
-    var delegate: QuestionFactoryDelegate?
+    weak var delegate: QuestionFactoryDelegate?
     
     init(moviesLoader: MoviesLoading, delegate: QuestionFactoryDelegate?) {
         self.moviesLoader = moviesLoader
