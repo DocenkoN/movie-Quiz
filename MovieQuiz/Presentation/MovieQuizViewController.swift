@@ -15,9 +15,7 @@ final class MovieQuizViewController: UIViewController, QuestionFactoryDelegate {
     private var currentQuestion: QuizQuestion?
     
     private var alertPresenter: AlertPresenter!
-    private var isLoading = false
-    
-    
+   
     private var isButtonEnabled = true
     
     private var statisticService: StatisticServiceProtocol = StatisticServiceImplementation()
@@ -129,7 +127,6 @@ final class MovieQuizViewController: UIViewController, QuestionFactoryDelegate {
             guard let self = self else { return }
             
             self.isButtonEnabled = false
-            self.isLoading = true
             self.questionFactory?.loadData()
             
         }
