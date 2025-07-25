@@ -35,6 +35,7 @@
 		AD7AFA552836189F00399704 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7AFA542836189F00399704 /* Array+Extensions.swift */; };
 		ADB3604F2E15D3CB00E770B0 /* StatisticService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB3604E2E15D3CB00E770B0 /* StatisticService.swift */; };
 		ADB360512E15D91000E770B0 /* ResultAlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB360502E15D91000E770B0 /* ResultAlertPresenter.swift */; };
+		ADCB8C512E337D1200DCF262 /* MovieQuizPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCB8C502E337D1200DCF262 /* MovieQuizPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		ADCB8C222E32922600DCF262 /* MovieQuizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieQuizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADCB8C312E3292CD00DCF262 /* MovieQuizTests1.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieQuizTests1.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADCB8C452E32A6E800DCF262 /* UI Testing Bundle.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UI Testing Bundle.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADCB8C502E337D1200DCF262 /* MovieQuizPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieQuizPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				AD1ABAB52831907B00B3E448 /* MovieQuizViewController.swift */,
+				ADCB8C502E337D1200DCF262 /* MovieQuizPresenter.swift */,
 				AD3DDF022E022BA800623434 /* Main.storyboard */,
 				AD40A8E32E13F260007F88DB /* AlertPresenter.swift */,
 				ADB360502E15D91000E770B0 /* ResultAlertPresenter.swift */,
@@ -164,6 +167,8 @@
 				AD3DDF082E022C1600623434 /* YS Display-Bold.ttf */,
 				AD3DDF0A2E022C2100623434 /* YS Display-Medium.ttf */,
 				AD3DDF122E022FBB00623434 /* Info.plist */,
+				AD1ABAB12831907B00B3E448 /* AppDelegate.swift */,
+				AD1ABAB32831907B00B3E448 /* SceneDelegate.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -195,8 +200,6 @@
 				AD3DDF102E022EBE00623434 /* Models */,
 				AD3DDF112E022ED000623434 /* Services */,
 				8F4738322848DE2A005DF65E /* Presentation */,
-				AD1ABAB12831907B00B3E448 /* AppDelegate.swift */,
-				AD1ABAB32831907B00B3E448 /* SceneDelegate.swift */,
 				ADF0CF75283FDAA10075F54D /* Helpers */,
 				8F4738332848DE46005DF65E /* Resources */,
 			);
@@ -423,6 +426,7 @@
 				ADB3604F2E15D3CB00E770B0 /* StatisticService.swift in Sources */,
 				AD40A8E22E13E7C4007F88DB /* AlertPresenterProtocol.swift in Sources */,
 				AD40A8E02E13E77D007F88DB /* AlertModel.swift in Sources */,
+				ADCB8C512E337D1200DCF262 /* MovieQuizPresenter.swift in Sources */,
 				AD7AFA552836189F00399704 /* Array+Extensions.swift in Sources */,
 				AD2363B12E26F1EA0080BAE8 /* MostPopularMovies.swift in Sources */,
 				AD40A8E62E140D64007F88DB /* StatisticServiceProtocol.swift in Sources */,
