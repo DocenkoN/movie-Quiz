@@ -36,12 +36,12 @@ final class MovieQuizViewController: UIViewController, QuestionFactoryDelegate {
     }
     
     @IBAction private func yesButtonClicked(_ sender: UIButton) {
-        guard isButtonEnabled, let question = currentQuestion else { return }
+        guard let question = currentQuestion else { return }
         showAnswerResult(isCorrect: question.correctAnswer == true)
     }
     
     @IBAction private func noButtonClicked(_ sender: UIButton) {
-        guard isButtonEnabled, let question = currentQuestion else { return }
+        guard let question = currentQuestion else { return }
         showAnswerResult(isCorrect: question.correctAnswer == false)
     }
     
@@ -59,7 +59,6 @@ final class MovieQuizViewController: UIViewController, QuestionFactoryDelegate {
     }
     
     private func show(quiz step: QuizStepViewModel) {
-        isButtonEnabled = true
         imageView.isHidden = false
         imageView.image = step.image
         textLabel.text = step.question
@@ -81,7 +80,6 @@ final class MovieQuizViewController: UIViewController, QuestionFactoryDelegate {
     }
     
     private func showNextQuestionOrResults() {
-        isButtonEnabled = false
         imageView.layer.borderWidth = 0
         
         if currentQuestionIndex == questionsAmount - 1 {
@@ -108,9 +106,7 @@ final class MovieQuizViewController: UIViewController, QuestionFactoryDelegate {
     }
     
     private func showLoadingIndicator() {
-        isButtonEnabled = false
         activityIndicator.startAnimating()
-        
         imageView.backgroundColor = .clear
     }
     
@@ -126,7 +122,6 @@ final class MovieQuizViewController: UIViewController, QuestionFactoryDelegate {
                                buttonText: "Попробовать еще раз") { [weak self] in
             guard let self = self else { return }
             
-            self.isButtonEnabled = false
             self.questionFactory?.loadData()
             
         }
