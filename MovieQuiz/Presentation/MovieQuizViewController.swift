@@ -86,3 +86,10 @@ extension MovieQuizViewController: AlertPresenterProtocol {
         present(alert, animated: animated)
     }
 }
+    
+    extension MovieQuizViewController: MovieQuizViewControllerProtocol {
+        
+    }
+
+    
+
