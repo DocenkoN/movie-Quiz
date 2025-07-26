@@ -5,6 +5,8 @@ final class MovieQuizViewController: UIViewController {
     @IBOutlet private weak var textLabel: UILabel!
     @IBOutlet private weak var counterLabel: UILabel!
     @IBOutlet private weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet private weak var yesButton: UIButton!
+    @IBOutlet private weak var noButton: UIButton!
     
     private var presenter: MovieQuizPresenter!
     private var alertPresenter: AlertPresenter!
@@ -15,6 +17,10 @@ final class MovieQuizViewController: UIViewController {
         
         activityIndicator.hidesWhenStopped = true
         imageView.layer.cornerRadius = 20
+        
+        yesButton.accessibilityIdentifier = "Yes"
+        noButton.accessibilityIdentifier = "No"
+        
         
         alertPresenter = AlertPresenter(view: self)
         presenter = MovieQuizPresenter(viewController: self)
@@ -86,10 +92,7 @@ extension MovieQuizViewController: AlertPresenterProtocol {
         present(alert, animated: animated)
     }
 }
-    
-    extension MovieQuizViewController: MovieQuizViewControllerProtocol {
-        
-    }
 
+extension MovieQuizViewController: MovieQuizViewControllerProtocol {
     
-
+}
