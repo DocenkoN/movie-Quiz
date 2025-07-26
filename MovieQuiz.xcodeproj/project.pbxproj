@@ -27,7 +27,6 @@
 		AD40A8E02E13E77D007F88DB /* AlertModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD40A8DF2E13E77D007F88DB /* AlertModel.swift */; };
 		AD40A8E22E13E7C4007F88DB /* AlertPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD40A8E12E13E7C4007F88DB /* AlertPresenterProtocol.swift */; };
 		AD40A8E42E13F260007F88DB /* AlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD40A8E32E13F260007F88DB /* AlertPresenter.swift */; };
-		AD40A8E62E140D64007F88DB /* StatisticServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD40A8E52E140D64007F88DB /* StatisticServiceProtocol.swift */; };
 		AD40A8E82E140E42007F88DB /* GameResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD40A8E72E140E42007F88DB /* GameResult.swift */; };
 		AD40A8EC2E14172A007F88DB /* StatisticServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD40A8EB2E14172A007F88DB /* StatisticServiceImplementation.swift */; };
 		AD5EE5DE284D7887003966EF /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5EE5DD284D7887003966EF /* UIColor+Extensions.swift */; };
@@ -93,7 +92,6 @@
 		AD40A8DF2E13E77D007F88DB /* AlertModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertModel.swift; sourceTree = "<group>"; };
 		AD40A8E12E13E7C4007F88DB /* AlertPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresenterProtocol.swift; sourceTree = "<group>"; };
 		AD40A8E32E13F260007F88DB /* AlertPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresenter.swift; sourceTree = "<group>"; };
-		AD40A8E52E140D64007F88DB /* StatisticServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticServiceProtocol.swift; sourceTree = "<group>"; };
 		AD40A8E72E140E42007F88DB /* GameResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResult.swift; sourceTree = "<group>"; };
 		AD40A8EB2E14172A007F88DB /* StatisticServiceImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticServiceImplementation.swift; sourceTree = "<group>"; };
 		AD5EE5DD284D7887003966EF /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
@@ -246,7 +244,6 @@
 				AD40A8D12E1010F4007F88DB /* QuestionFactory.swift */,
 				AD40A8DB2E10393B007F88DB /* QuestionFactoryProtocol.swift */,
 				AD40A8DD2E1042D0007F88DB /* QuestionFactoryDelegate.swift */,
-				AD40A8E52E140D64007F88DB /* StatisticServiceProtocol.swift */,
 				AD40A8EB2E14172A007F88DB /* StatisticServiceImplementation.swift */,
 				ADB3604E2E15D3CB00E770B0 /* StatisticService.swift */,
 				AD2363AE2E26EF700080BAE8 /* NetworkClient.swift */,
@@ -485,7 +482,6 @@
 				ADCB8C512E337D1200DCF262 /* MovieQuizPresenter.swift in Sources */,
 				AD7AFA552836189F00399704 /* Array+Extensions.swift in Sources */,
 				AD2363B12E26F1EA0080BAE8 /* MostPopularMovies.swift in Sources */,
-				AD40A8E62E140D64007F88DB /* StatisticServiceProtocol.swift in Sources */,
 				AD40A8DC2E10393B007F88DB /* QuestionFactoryProtocol.swift in Sources */,
 				AD40A8E42E13F260007F88DB /* AlertPresenter.swift in Sources */,
 				AD40A8DE2E1042D0007F88DB /* QuestionFactoryDelegate.swift in Sources */,
