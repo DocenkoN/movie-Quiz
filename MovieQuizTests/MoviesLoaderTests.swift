@@ -3,6 +3,7 @@ import XCTest
 
 final class MoviesLoaderTests: XCTestCase {
     
+    // MARK: - Тест проверки успешной загрузки
     func testSuccessLoading() throws {
         
         let stubNetworkClient = StubNetworkClient(emulateError: false)
@@ -24,6 +25,7 @@ final class MoviesLoaderTests: XCTestCase {
         waitForExpectations(timeout: 1)
     }
     
+    // MARK: - Тест проверки ошибки загрузки
     func testFailureLoading() throws {
         
         let stubNetworkClient = StubNetworkClient(emulateError: true)

@@ -20,6 +20,7 @@ final class QuestionFactory: QuestionFactoryProtocol {
                 switch result {
                 case .success(let mostPopularMovies):
                     self.movies = mostPopularMovies.items
+                    self.currentIndex = 0
                     self.delegate?.didLoadDataFromServer()
                 case .failure(let error):
                     self.delegate?.didFailToLoadData(with: error)
@@ -38,6 +39,13 @@ final class QuestionFactory: QuestionFactoryProtocol {
                 return
             }
             
+            guard self.currentIndex < self.movies.count else {
+                DispatchQueue.main.async {
+                    self.delegate?.didReceiveNextQuestion(question: nil)
+                }
+                return
+            }
+
             let index = (0..<self.movies.count).randomElement() ?? 0
             let movie = self.movies[index]
             

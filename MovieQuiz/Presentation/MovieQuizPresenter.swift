@@ -66,6 +66,7 @@ final class MovieQuizPresenter: QuestionFactoryDelegate {
     }
     
     private func proceedToNextQuestionOrResults() {
+        
         if isLastQuestion() {
             let message = makeResultsMessage()
             let viewModel = QuizResultsViewModel(

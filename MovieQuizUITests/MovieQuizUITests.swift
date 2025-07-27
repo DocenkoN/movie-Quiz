@@ -32,34 +32,38 @@ final class UI_Testing_Bundle: XCTestCase {
             XCUIApplication().launch()
         }
     }
+    
+    // MARK: - Тест на кнопку "Да"
     func testYesButton() {
         let firstPoster = app.images["Poster"]
-        sleep(3)
+        XCTAssertTrue(firstPoster.waitForExistence(timeout: 5))
         let firstPosterData = firstPoster.screenshot().pngRepresentation
         
         app.buttons["Yes"].tap()
-        sleep(3)
         
         let secondPoster = app.images["Poster"]
+        XCTAssertTrue(firstPoster.waitForExistence(timeout: 5))
         let secondPosterData = secondPoster.screenshot().pngRepresentation
         
         XCTAssertNotEqual(firstPosterData, secondPosterData)
     }
     
+    // MARK: - Тест на кнопку "Нет"
     func testNoButton() {
         let firstPoster = app.images["Poster"]
-        sleep(3)
+        XCTAssertTrue(firstPoster.waitForExistence(timeout: 5))
         let firstPosterData = firstPoster.screenshot().pngRepresentation
         
         app.buttons["No"].tap()
-        sleep(3)
         
         let secondPoster = app.images["Poster"]
+        XCTAssertTrue(firstPoster.waitForExistence(timeout: 5))
         let secondPosterData = secondPoster.screenshot().pngRepresentation
         
         XCTAssertNotEqual(firstPosterData, secondPosterData)
     }
     
+    // MARK: - Тест появления алерта при окончании раунда
     func testAlertGameFinish() {
         let yesButton = app.buttons["Yes"]
         XCTAssertTrue(yesButton.exists)
@@ -80,7 +84,7 @@ final class UI_Testing_Bundle: XCTestCase {
         XCTAssertEqual(alert.buttons.firstMatch.label, "Сыграть ещё раз")
     }
     
-    
+    // MARK: - Тест скрытия алерта после нажатия на кнопку на нём
     func testAlertDismissSimplified() {
         for _ in 1...10 {
             app.buttons["Yes"].tap()

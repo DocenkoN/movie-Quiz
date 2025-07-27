@@ -20,6 +20,7 @@ final class MovieQuizViewController: UIViewController {
         
         yesButton.accessibilityIdentifier = "Yes"
         noButton.accessibilityIdentifier = "No"
+        counterLabel.accessibilityIdentifier = "Index"
         
         
         alertPresenter = AlertPresenter(view: self)
@@ -94,5 +95,4 @@ extension MovieQuizViewController: AlertPresenterProtocol {
 }
 
 extension MovieQuizViewController: MovieQuizViewControllerProtocol {
-    
 }
