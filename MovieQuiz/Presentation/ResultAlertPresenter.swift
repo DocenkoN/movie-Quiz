@@ -22,4 +22,3 @@ final class ResultAlertPresenter {
         return AlertModel(title: "Раунд завершён", message: message, buttonText: "Сыграть ещё раз", completion: completion)
     }
 }
-

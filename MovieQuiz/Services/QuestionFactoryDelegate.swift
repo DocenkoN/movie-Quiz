@@ -6,3 +6,4 @@ protocol QuestionFactoryDelegate: AnyObject {
     func didFailToLoadData(with error: Error)
     func didFailToLoadQuestion(with error: Error)
 }
+
